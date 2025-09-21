@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       ul li:hover {
         color: aqua;
+      }
+      .btn1{
+        background-color: white;
+        color: red;
+        font-size: 24px;
+        padding: 6px 8px;
+        border-radius: 50%;
+        border: 2px solid white;
+         transition: all .2s ease-in-out;
+      }
+      .btn1:hover{
+        background-color: transparent;
+        color: white;
+        transform: scale(1.03);
       }
     </style>
   </head>
@@ -28,21 +43,22 @@
     <!-- header section  -->
     <div class="bg-slate-500 pt-40 px-20 flex items-center justify-around">
       <div class="w-1/2">
-        <h1 class="text-3xl font-bold">
-          Hi. I'm Bijoy. I design awesome websites.
+        <h1 class="text-4xl text-white font-bold">
+          Hi. I'm <span class="text-red-700">Bijoy</span>. I design 
+          <br>awesome websites.
         </h1>
-        <p>
+        <p class="text-slate-50 font-medium my-5 text-xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
           doloremque atque, aliquam expedita nostrum modi labore consequatur,
           dolorem laudantium voluptate tempora, ipsum reprehenderit fuga qui.
           Nobis consequatur ipsum deleniti voluptatum.
         </p>
-        <div>
-          <button></button>
-          <p class="text-3xl text-gray-100">Watch Presentation video</p>
+        <div class="flex items-center gap-4">
+          <button class="btn1"><i class="fa-solid fa-play"></i></i></button>
+          <p class="text-2xl underline text-gray-100">Watch Presentation video</p>
         </div>
       </div>
-      <img class="w-[400px]" src="/Bijoy.png" alt="" />
+      <img class="w-[400px]" src="./Bijoy.png" alt="" />
     </div>
   </body>
 </html>
